@@ -39,7 +39,7 @@ app.use(session({
     store: MongoStore.create({
         mongoUrl: process.env.MONGODB_URL
     }),
-    // cookie:  {message: new Date (Date.now() +  (3600000))}
+    
 }))
 
 app.use(express.static('public'));
